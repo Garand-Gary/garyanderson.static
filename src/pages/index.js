@@ -1,8 +1,9 @@
 import React from 'react'
-import { withSiteData } from 'react-static'
+import { withRouteData } from 'react-static'
+import Paragraphs from '../components/paragraphs'
 
-export default withSiteData(() => (
-  <div style={{ textAlign: 'center' }}>
-    <h1>This is the home page.</h1>
-  </div>
+export default withRouteData(({ home }) => (
+    <div>
+        <Paragraphs paragraphs = {home} />
+    </div>
 ))
