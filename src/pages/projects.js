@@ -1,8 +1,9 @@
 import React from 'react'
-import { withSiteData } from 'react-static'
+import { withRouteData } from 'react-static'
+import Projects from '../components/projects'
 
-export default withSiteData(() => (
-  <div style={{ textAlign: 'center' }}>
-    <h1>This is the projects page.</h1>
+export default withRouteData(({ projects }) => (
+  <div>
+    <Projects projects={projects} />
   </div>
 ))
