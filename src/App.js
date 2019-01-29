@@ -1,17 +1,13 @@
 import React from 'react'
 import { Root, Routes } from 'react-static'
-import { Link } from '@reach/router'
+import Header from './components/header'
 
 import './app.css'
 
 function App() {
   return (
     <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/me">Me</Link>
-        <Link to="/projects">Projects</Link>
-      </nav>
+      <Header />
       <div className="content">
         <Routes />
       </div>
