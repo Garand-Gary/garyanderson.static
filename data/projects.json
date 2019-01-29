@@ -1,0 +1,51 @@
+﻿[
+  {
+    "title": "Some project",
+    "blurb": "This was a thing that did a thing",
+    "links": [
+      {
+        "url": "http://github.com",
+        "text": "GitHub"
+      },
+      {
+        "url": "http://nuget.org",
+        "text": "NuGet"
+      }
+    ],
+    "image": "image.png",
+    "description": [
+      {
+        "text": "Here is a bit of info about the project."
+      },
+      {
+        "text": "Here is some more information."
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "React",
+        "usage": "Bla"
+      },
+      {
+        "technology": "ASP.NET",
+        "usage": "Web n that"
+      },
+      {
+        "technology": "C#",
+        "usage": "Code"
+      },
+      {
+        "technology": "SQL Server",
+        "usage": "Database"
+      },
+      {
+        "technology": "Azure",
+        "usage": "Hosting n ting"
+      },
+      {
+        "technology": "Azure DevOps",
+        "usage": "PIPELINES"
+      }
+    ]
+  }
+]
