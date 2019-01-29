@@ -1,27 +1,31 @@
-import axios from 'axios'
+import home from './data/home.json'
+import me from './data/me.json'
+import projects from './data/projects.json'
 
 export default {
   getSiteData: () => ({
-    title: 'React Static',
+    title: 'Gary Anderson\'s Online Home',
   }),
   getRoutes: async () => {
-    const { data: posts } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts'
-    )
-    return [
-      {
-        path: '/blog',
-        getData: () => ({
-          posts,
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          component: 'src/containers/Post',
-          getData: () => ({
-            post,
-          }),
-        })),
-      },
+      return [
+          {
+              path: '/',
+              getData: () => ({
+                  home,
+              }),
+          },
+          {
+              path: '/me',
+              getData: () => ({
+                  me,
+              }),
+          },
+          {
+              path: '/projects',
+              getData: () => ({
+                  projects,
+              }),
+          },
     ]
   },
 }
