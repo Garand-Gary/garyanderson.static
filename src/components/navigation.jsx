@@ -3,17 +3,23 @@ import { Link } from '@reach/router'
 
 class Navigation extends React.Component {
     render() {
+        // this is only active when the location pathname is exactly
+        // the same as the href.
+        const isActive = ({ isCurrent }) => {
+            return isCurrent ? { className: "active" } : null
+        }
+
         return (
-            <nav>
+            <nav className="float-right">
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" getProps={isActive}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/me">Me</Link>
+                        <Link to="/me" getProps={isActive}>Me</Link>
                     </li>
                     <li>
-                        <Link to="/projects">Projects</Link>
+                        <Link to="/projects" getProps={isActive}>Projects</Link>
                     </li>
                 </ul>
             </nav>

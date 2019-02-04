@@ -1,7 +1,10 @@
+html, body {
+  height: 100vh;
+}
+
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-    'Lucida Grande', sans-serif;
-  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
+               'Trebuchet MS', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -17,17 +20,93 @@ img {
   max-width: 100%;
 }
 
-nav {
-  width: 100%;
-  background: #108db8;
-}
-
-nav a {
-  color: white;
-  padding: 1rem;
-  display: inline-block;
-}
-
 .content {
   padding: 1rem;
+}
+
+
+/* My styles */
+header, main, footer {
+  padding: 10px 100px;
+}
+
+header {
+  border-bottom: 3px solid darkorange;
+  font-family: Consolas, 'Lucida Console', monospace;
+  background: white;
+  opacity: 0.8;
+}
+
+h1 {
+  color: dimgray;
+  font-weight: bold;
+}
+
+h2 {
+  color: darkorange;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav {
+  font-weight: bold;
+  color: dimgray;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  padding: 5px 10px;
+}
+
+nav ul li a .active {
+  border-bottom: 2px solid darkorange;
+}
+
+
+
+
+footer {
+  background-color: dimgrey;
+  min-height: 100vh;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li, footer dl dd {
+  margin-bottom: 5px;
+  color: white;
+}
+
+footer ul li a, footer dl dt a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer ul li a:hover, footer dl dt a:hover {
+  color: darkorange;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 25px;
+  font-family: Consolas, 'Lucida Console', monospace;
+  margin-bottom: 10px;
+  color: darkorange;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
 }

@@ -7,16 +7,20 @@ class Footer extends React.Component {
     render() {
         return (
             <footer>
-                <div>
-                    <FooterNavigation />
+                <div className="row">
+                    <div className="col-sm-3">
+                        <FooterNavigation />
+                    </div>
+                    <div className="col-sm-3">
+                        <SocialLinks />
+                    </div>
+                    <div className="col-sm-6">
+                        <OtherLinks />
+                    </div>
                 </div>
-                <div>
-                    <SocialLinks />
+                <div className="row">
+                    <div className="col-sm-12 copyright">&copy; Garand Software Limited</div>
                 </div>
-                <div>
-                    <OtherLinks />
-                </div>
-                <div>&copy; Garand Software Limited</div>
             </footer>
         )
     }
