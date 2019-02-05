@@ -5,5 +5,9 @@ module.exports = {
     "plugin:react/recommended"],
   rules:{
     "linebreak-style": 0
+  },
+  env: {
+    "browser": true,
+    "node": true
   }
 }
