@@ -10,8 +10,7 @@ body {
   padding: 0;
 }
 
-
-/* My styles */
+/* Header and Nav */
 header, main, footer {
   padding: 10px 100px;
 }
@@ -73,6 +72,18 @@ nav ul li a.active {
 }
 
 
+/* Main content area */
+h3 {
+  font-size: 50px;
+  color: dimgray;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  color: darkorange;
+  font-weight: bold;
+}
 
 
 footer {
