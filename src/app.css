@@ -10,20 +10,6 @@ body {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #108db8;
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-.content {
-  padding: 1rem;
-}
-
 
 /* My styles */
 header, main, footer {
@@ -40,12 +26,14 @@ header {
 h1 {
   color: dimgray;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 h2 {
   color: darkorange;
   font-size: 18px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 nav {
@@ -53,20 +41,34 @@ nav {
   color: dimgray;
 }
 
+nav ul {
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+}
+
 nav ul li {
   display: inline-block;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 5px 20px 5px 0;
 }
 
 nav ul li a {
   text-decoration: none;
   display: block;
   color: inherit;
-  padding: 5px 10px;
+  padding: 0 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.75s;
 }
 
-nav ul li a .active {
+nav ul li a:hover {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid darkgrey;
+}
+
+nav ul li a.active {
   border-bottom: 2px solid darkorange;
 }
 
@@ -75,11 +77,13 @@ nav ul li a .active {
 
 footer {
   background-color: dimgrey;
-  min-height: 100vh;
+  border-top: 3px solid darkorange;
 }
 
 footer ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 footer ul li, footer dl dd {
@@ -91,6 +95,7 @@ footer ul li a, footer dl dt a {
   color: white;
   text-decoration: none;
   font-size: 20px;
+  font-weight: bold;
 }
 
 footer ul li a:hover, footer dl dt a:hover {

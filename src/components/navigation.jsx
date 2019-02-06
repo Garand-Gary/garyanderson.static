@@ -10,7 +10,7 @@ class Navigation extends React.Component {
         }
 
         return (
-            <nav className="float-right">
+            <nav className="float-md-right">
                 <ul>
                     <li>
                         <Link to="/" getProps={isActive}>Home</Link>
