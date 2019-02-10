@@ -126,3 +126,40 @@ h5 {
   text-align: center;
   color: white;
 }
+
+
+/* Project container */
+.project {
+  border: 2px solid darkorange;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-header {
+  border-bottom: 1px dashed dimgrey;
+  margin: 0;
+}
+
+h6 {
+  font-size: 25px;
+  color: darkorange;
+  margin-bottom: 10px;
+}
+
+.project-info, .project-tech, .project-image {
+  padding: 0;
+}
+
+.link-list {
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.link-list li + li::before {
+  content: " | ";
+}
