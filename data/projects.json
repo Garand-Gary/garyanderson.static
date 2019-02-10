@@ -5,6 +5,7 @@
     {
       "title": "Some project",
       "blurb": "This was a thing that did a thing",
+      "completed": "Some month and year",
       "links": [
         {
           "url": "http://github.com",
@@ -15,7 +16,7 @@
           "text": "NuGet"
         }
       ],
-      "image": "image.png",
+      "image": "football-data.png",
       "description": [
         {
           "text": "Here is a bit of info about the project."
@@ -26,28 +27,20 @@
       ],
       "technologies": [
         {
-          "technology": "React",
+          "technology": "Angular",
           "usage": "Bla"
         },
         {
-          "technology": "ASP.NET",
+          "technology": "AspNet",
           "usage": "Web n that"
         },
         {
-          "technology": "C#",
+          "technology": "CSharp",
           "usage": "Code"
         },
         {
-          "technology": "SQL Server",
+          "technology": "SqlServer",
           "usage": "Database"
-        },
-        {
-          "technology": "Azure",
-          "usage": "Hosting n ting"
-        },
-        {
-          "technology": "Azure DevOps",
-          "usage": "PIPELINES"
         }
       ]
     }
