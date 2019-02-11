@@ -19,7 +19,7 @@ header {
   border-bottom: 3px solid darkorange;
   font-family: Consolas, 'Lucida Console', monospace;
   background: white;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 h1 {
