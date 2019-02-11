@@ -1,4 +1,5 @@
 ﻿import React from 'react'
+import PropTypes from 'prop-types'
 
 class Paragraphs extends React.Component {
     render() {
@@ -6,6 +7,10 @@ class Paragraphs extends React.Component {
             <p key={key}>{paragraph.text}</p>
         )
     }
+}
+
+Paragraphs.propTypes = {
+    paragraphs: PropTypes.array
 }
 
 export default Paragraphs

@@ -3,6 +3,7 @@ import Paragraphs from './paragraphs'
 import ProjectInfo from './project-info'
 import ProjectTechList from './project-tech-list'
 import ProjectImage from './project-image'
+import PropTypes from 'prop-types'
 
 class Project extends React.Component {
     render() {
@@ -27,6 +28,10 @@ class Project extends React.Component {
             </div>
         )
     }
+}
+
+Project.propTypes = {
+    project: PropTypes.object
 }
 
 export default Project

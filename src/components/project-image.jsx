@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class ProjectImage extends React.Component {
     render() {
@@ -9,6 +10,10 @@ class ProjectImage extends React.Component {
             <img src={images(imagePath)} />
         )
     }
+}
+
+ProjectImage.propTypes = {
+    image: PropTypes.string
 }
 
 export default ProjectImage

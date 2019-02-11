@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class ProjectTech extends React.Component {
     render() {
@@ -13,6 +14,10 @@ class ProjectTech extends React.Component {
             <img src={images(imagePath)} title={usage} />
         )
     }
+}
+
+ProjectTech.propTypes = {
+    tech: PropTypes.object
 }
 
 export default ProjectTech

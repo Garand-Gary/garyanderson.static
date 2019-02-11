@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectTech from './project-tech'
+import PropTypes from 'prop-types'
 
 class ProjectTechList extends React.Component {
     render() {
@@ -7,6 +8,10 @@ class ProjectTechList extends React.Component {
             <ProjectTech key={key} tech={tech}/>
         )
     }
+}
+
+ProjectTechList.propTypes = {
+    technologies: PropTypes.array
 }
 
 export default ProjectTechList

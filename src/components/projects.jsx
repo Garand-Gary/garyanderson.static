@@ -1,5 +1,6 @@
 ﻿import React from 'react'
 import Project from './project'
+import PropTypes from 'prop-types'
 
 class Projects extends React.Component {
     render() {
@@ -7,6 +8,10 @@ class Projects extends React.Component {
             <Project project={project} key={key} />
         )
     }
+}
+
+Projects.propTypes = {
+    projects: PropTypes.array
 }
 
 export default Projects

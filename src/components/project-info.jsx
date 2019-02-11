@@ -1,5 +1,6 @@
 import React from 'react'
 import LinkList from './project-link-list'
+import PropTypes from 'prop-types'
 
 class ProjectInfo extends React.Component {
     render() {
@@ -29,6 +30,13 @@ class ProjectInfo extends React.Component {
             </table>
         )
     }
+}
+
+ProjectInfo.propTypes = {
+    title: PropTypes.string,
+    blurb: PropTypes.string,
+    completed: PropTypes.string,
+    links: PropTypes.array
 }
 
 export default ProjectInfo

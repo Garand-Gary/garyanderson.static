@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class LinkList extends React.Component {
     render() {
@@ -10,6 +11,10 @@ class LinkList extends React.Component {
             </ul>
         )
     }
+}
+
+LinkList.propTypes = {
+    links: PropTypes.array
 }
 
 export default LinkList
