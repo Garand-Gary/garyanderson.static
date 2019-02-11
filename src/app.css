@@ -11,7 +11,7 @@ body {
 }
 
 /* Header and Nav */
-header, main, footer {
+header .top, main, footer {
   padding: 10px 100px;
 }
 
@@ -20,6 +20,13 @@ header {
   font-family: Consolas, 'Lucida Console', monospace;
   background: white;
   /*opacity: 0.8;*/
+  min-height: 400px;
+  background-color: darkorange;
+}
+
+header .top {
+  background-color: white;
+  opacity: 0.8;
 }
 
 h1 {
@@ -89,6 +96,7 @@ h4 {
 footer {
   background-color: dimgrey;
   border-top: 3px solid darkorange;
+  box-shadow: 0 50vh 0 50vh dimgrey;
 }
 
 footer ul {
@@ -120,6 +128,7 @@ h5 {
   font-family: Consolas, 'Lucida Console', monospace;
   margin-bottom: 10px;
   color: darkorange;
+  font-weight: bold;
 }
 
 .copyright {
@@ -138,12 +147,13 @@ h5 {
 .project-header {
   border-bottom: 1px dashed dimgrey;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 h6 {
   font-size: 25px;
   color: darkorange;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .project-info, .project-tech, .project-image {
@@ -162,4 +172,17 @@ h6 {
 
 .link-list li + li::before {
   content: " | ";
+}
+
+.project-image img {
+  border: 2px solid dimgrey;
+  float: right;
+}
+
+.project-description {
+  padding-top: 20px;
+}
+
+img.tech {
+  float: right;
 }

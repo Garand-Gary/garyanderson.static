@@ -12,13 +12,13 @@ class Project extends React.Component {
         return (
             <div className="project">
                 <div className="project-header row">
-                    <div className="project-info col-md-5">
+                    <div className="project-info col-md-7">
                         <ProjectInfo title = {proj.title} blurb = {proj.blurb} completed = {proj.completed} links = {proj.links} />
                     </div>
-                    <div className="project-tech col-md-4">
+                    <div className="project-tech col-md-3">
                         <ProjectTechList technologies={proj.technologies} />
                     </div>
-                    <div className="project-image col-md-3">
+                    <div className="project-image col-md-2">
                         <ProjectImage image = {proj.image} />
                     </div>
                 </div>

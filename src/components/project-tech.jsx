@@ -11,7 +11,7 @@ class ProjectTech extends React.Component {
         const imagePath = './' + technology + '.png'
 
         return (
-            <img src={images(imagePath)} title={usage} />
+            <img className="tech" src={images(imagePath)} title={usage} />
         )
     }
 }
