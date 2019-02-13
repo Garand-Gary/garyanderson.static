@@ -12,21 +12,16 @@ body {
 
 /* Header and Nav */
 header .top, main, footer {
-  padding: 10px 100px;
+  padding: 10px 150px;
 }
 
 header {
   border-bottom: 3px solid darkorange;
   font-family: Consolas, 'Lucida Console', monospace;
-  background: white;
-  /*opacity: 0.8;*/
-  min-height: 400px;
-  background-color: darkorange;
 }
 
 header .top {
   background-color: white;
-  opacity: 0.8;
 }
 
 h1 {
@@ -40,6 +35,10 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   white-space: nowrap;
+}
+
+.title {
+  padding: 0;
 }
 
 nav {
@@ -80,6 +79,16 @@ nav ul li a.active {
 
 
 /* Main content area */
+main {
+  font-size: 20px;
+  background-color: white;
+  padding-top: 50px;
+}
+
+.content-header {
+  margin-bottom: 50px;
+}
+
 h3 {
   font-size: 50px;
   color: dimgray;
@@ -87,7 +96,7 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 25px;
   color: darkorange;
   font-weight: bold;
 }

@@ -4,7 +4,7 @@ import Navigation from './navigation';
 class Header extends React.Component {
     render() {
         return (
-            <header>
+            <header className="container-fluid">
                 <div className="row top">
                     <div className="title col-md-6">
                         <h1>Gary Anderson</h1>

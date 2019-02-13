@@ -7,7 +7,7 @@ class ContentHeader extends React.Component {
         const subtitle = this.props.subtitle;
 
         return (
-            <div>
+            <div className="content-header">
                 <h3>{title}</h3>
                 <h4>{subtitle}</h4>
             </div>
