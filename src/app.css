@@ -148,7 +148,7 @@ h5 {
 
 /* Project container */
 .project {
-  border: 2px solid darkorange;
+  /*border: 2px solid darkorange;*/
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -185,7 +185,6 @@ h6 {
 
 .project-image img {
   border: 2px solid dimgrey;
-  float: right;
 }
 
 .project-description {
