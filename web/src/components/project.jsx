@@ -2,25 +2,32 @@
 import Paragraphs from './paragraphs'
 import ProjectInfo from './project-info'
 import ProjectTechList from './project-tech-list'
-import ProjectImage from './project-image'
 import PropTypes from 'prop-types'
+import LinkList from './project-link-list'
 
 class Project extends React.Component {
     render() {
         const proj = this.props.project;
+        const title = proj.title;
+        const blurb = this.props.blurb;
 
         return (
             <div className="project col-lg-6 col-md-12">
-                <div className="project-header row">
-                    <div className="project-info col-md-7">
-                        <ProjectInfo title = {proj.title} blurb = {proj.blurb} completed = {proj.completed} links = {proj.links} />
-                    </div>
-                    <div className="project-tech col-md-3">
-                        <ProjectTechList technologies={proj.technologies} />
+                <div className="row">
+                    <div className="project-title col-xs-12">
+                        <h6>{title}</h6>
                     </div>
                 </div>
-                <div className="project-description">
-                    <Paragraphs paragraphs = {proj.description} />
+                <div className="row">
+                    <div className="col-xs-11">
+                    </div>
+                    <div className="col-xs-1">
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-xs-12">
+                        <LinkList links = {proj.links} />
+                    </div>
                 </div>
             </div>
         )

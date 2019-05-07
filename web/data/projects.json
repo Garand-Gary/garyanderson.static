@@ -5,7 +5,47 @@
     {
       "title": "Some project",
       "blurb": "This was a thing that did a thing",
-      "completed": "Some month and year",
+      "links": [
+        {
+          "url": "http://github.com",
+          "text": "GitHub"
+        },
+        {
+          "url": "http://nuget.org",
+          "text": "NuGet"
+        }
+      ],
+      "image": "football-data.png",
+      "description": [
+        {
+          "text": "Here is a bit of info about the project."
+        },
+        {
+          "text": "Here is some more information."
+        }
+      ],
+      "technologies": [
+        {
+          "technology": "Angular",
+          "usage": "Bla"
+        },
+        {
+          "technology": "AspNet",
+          "usage": "Web n that"
+        },
+        {
+          "technology": "CSharp",
+          "usage": "Code"
+        },
+        {
+          "technology": "SqlServer",
+          "usage": "Database"
+        }
+      ]
+    },
+    {
+      "title": "Some project",
+      "blurb": "This was a thing that did a thing",
       "links": [
         {
           "url": "http://github.com",
