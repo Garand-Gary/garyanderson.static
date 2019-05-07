@@ -8,33 +8,33 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  background-color: #31708E; /*#F7F9FB */
 }
 
 /* Header and Nav */
 header .top, main, footer {
-  padding: 10px 150px;
+  padding: 10px 15%;
 }
 
 header {
-  border-bottom: 3px solid darkorange;
+  background-color: #8FC1E3;
+  border-bottom: 3px solid #31708E;
   font-family: Consolas, 'Lucida Console', monospace;
 }
 
-header .top {
-  background-color: white;
-}
-
 h1 {
-  color: dimgray;
+  color: #31708E;
   font-weight: bold;
   white-space: nowrap;
 }
 
-h2 {
-  color: darkorange;
-  font-size: 18px;
-  font-weight: bold;
-  white-space: nowrap;
+h1 a {
+  color: inherit;
+}
+
+h1 a:hover {
+  color: #F7F9FB;
+  text-decoration: none;
 }
 
 .title {
@@ -43,7 +43,7 @@ h2 {
 
 nav {
   font-weight: bold;
-  color: dimgray;
+  color: #31708E;
 }
 
 nav ul {
@@ -55,7 +55,8 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-size: 20px;
-  padding: 5px 20px 5px 0;
+  padding: 5px 0 5px 20px;
+  text-align: right;
 }
 
 nav ul li a {
@@ -70,19 +71,19 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: none;
   color: inherit;
-  border-bottom: 2px solid darkgrey;
+  border-bottom: 2px solid #F7F9FB;
 }
 
 nav ul li a.active {
-  border-bottom: 2px solid darkorange;
+  border-bottom: 2px solid #5085A5;
 }
 
 
 /* Main content area */
 main {
   font-size: 20px;
-  background-color: white;
   padding-top: 50px;
+  color: #F7F9FB;
 }
 
 .content-header {
@@ -91,21 +92,21 @@ main {
 
 h3 {
   font-size: 50px;
-  color: dimgray;
+  color: #F7F9FB;
   font-weight: bold;
 }
 
 h4 {
   font-size: 25px;
-  color: darkorange;
+  color: #8FC1E3;
   font-weight: bold;
 }
 
 
 footer {
-  background-color: dimgrey;
-  border-top: 3px solid darkorange;
-  box-shadow: 0 50vh 0 50vh dimgrey;
+  border-top: 3px solid #8FC1E3;
+  background-color: #5085A5;
+  box-shadow: 0 50vh 0 50vh #5085A5;
 }
 
 footer ul {
@@ -116,18 +117,18 @@ footer ul {
 
 footer ul li, footer dl dd {
   margin-bottom: 5px;
-  color: white;
+  color: #F7F9FB;
 }
 
 footer ul li a, footer dl dt a {
-  color: white;
+  color: #F7F9FB;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
 }
 
 footer ul li a:hover, footer dl dt a:hover {
-  color: darkorange;
+  color: #8FC1E3;
   text-decoration: none;
   font-size: 20px;
 }
@@ -136,21 +137,24 @@ h5 {
   font-size: 25px;
   font-family: Consolas, 'Lucida Console', monospace;
   margin-bottom: 10px;
-  color: darkorange;
+  color: #8FC1E3;
   font-weight: bold;
 }
 
 .copyright {
   text-align: center;
-  color: white;
+  color: #F7F9FB;
 }
 
 
 /* Project container */
 .project {
-  /*border: 2px solid darkorange;*/
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.project-title {
+  background-color: #8FC1E3;
 }
 
 .project-header {
@@ -161,7 +165,7 @@ h5 {
 
 h6 {
   font-size: 25px;
-  color: darkorange;
+  color: #8FC1E3;
   margin-bottom: 20px;
 }
 
