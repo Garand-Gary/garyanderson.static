@@ -10,6 +10,8 @@ export default withRouteData(({ projects }) => (
             <title>Projects - GaryAnderson.org</title>
         </Helmet>
         <ContentHeader title = {projects.title} subtitle = {projects.subtitle} />
-        <Projects projects={projects.projects} />
+        <div className="row">
+            <Projects projects={projects.projects} />
+        </div>
     </div>
 ))
