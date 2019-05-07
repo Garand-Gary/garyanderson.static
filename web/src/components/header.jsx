@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import Navigation from './navigation';
+import { Link } from '@reach/router';
 
 class Header extends React.Component {
     render() {
@@ -7,8 +8,7 @@ class Header extends React.Component {
             <header className="container-fluid">
                 <div className="row top">
                     <div className="title col-md-6">
-                        <h1>Gary Anderson</h1>
-                        <h2>Software Developer</h2>
+                        <h1><Link to="/">Gary Anderson</Link></h1>
                     </div>
                     <div className="menu col-md-6 align-self-center">
                         <Navigation />

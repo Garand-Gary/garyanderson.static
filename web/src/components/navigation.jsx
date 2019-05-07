@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import { Link } from '@reach/router'
+import { Link } from '@reach/router';
 
 class Navigation extends React.Component {
     render() {
@@ -12,9 +12,6 @@ class Navigation extends React.Component {
         return (
             <nav className="float-md-right">
                 <ul>
-                    <li>
-                        <Link to="/" getProps={isActive}>Home</Link>
-                    </li>
                     <li>
                         <Link to="/me" getProps={isActive}>Me</Link>
                     </li>
